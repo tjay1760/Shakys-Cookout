@@ -16,3 +16,33 @@ header{
     font-size: 30px;
     font-weight: 700;
 }
+
+.home-message{
+    background-color:#f7f7f7;
+    border: 2px solid #ffffff;
+}
+.time{
+    font-family: Lato, Arial, Helvetica, sans;
+}
+.main-program{
+    background-color: #272A32;
+    font-family: Lato, Arial, Helvetica, sans;
+    color:#ffffff;
+}
+.main-program-heading{
+    font-size: 25px;
+}
+.card{
+    background-color: #3c3f46;
+}
+.card-icon{
+    font-size: 30px;
+}
+.redline1{
+    width:25px;
+    height:3px;
+    color:#f5422e;
+}
+.fa-smile-tongue{
+    font-size: 25px;
+}
