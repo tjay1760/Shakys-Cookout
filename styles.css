@@ -1,12 +1,19 @@
-fa-bars{
-    font-size: 10px;
+body{
+    font-family: Lato,Arial, Helvetica, sans-serif;
 }
-header{
-    margin-top: 7%;
+.fa-bars{
+    font-size: 30px;
 }
+.intro-container{
+background-image: url(./images/food.png);
+margin:0;
+}
+
 .headings{
     margin-top: 20%;
     color:#f5422e;
+    opacity:0.9;
+    z-index:1;
 }
 .quote{
     font-family: Lato, Arial, Helvetica, sans;
@@ -20,9 +27,19 @@ header{
 .home-message{
     background-color:#f7f7f7;
     border: 2px solid #ffffff;
+    margin:2%;
+    box-shadow: 5px 5px 5px 0px #888888, -5px -5px 5px 0px #888888;
+}
+.welcome-message{
+    margin:2%;
 }
 .time{
     font-family: Lato, Arial, Helvetica, sans;
+    font-weight: 700;
+    font-size: 16px;    
+}
+.location{
+    margin-bottom: 0%;
 }
 .main-program{
     background-color: #272A32;
@@ -34,6 +51,10 @@ header{
 }
 .card{
     background-color: #3c3f46;
+    display:grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    padding: 2%;
+
 }
 .card-icon{
     font-size: 30px;
@@ -45,4 +66,48 @@ header{
 }
 .fa-smile-tongue{
     font-size: 25px;
+}
+.icon{
+    height:40px;
+    width:40px;
+}
+.program-card-entry{
+    color:#f5422e;
+    font-size: 18px;
+    font-weight: 700;
+}
+.register-button{
+    background-color: #f5422e;
+    color:#ffffff;
+    width:70%;
+    height:20%;
+    margin:10%;
+    padding:8%;
+    border-radius: 0%;
+    font-family: Lato, arial, helvetica, sans;
+    font-size: 20px;
+    font-weight: bold;
+}
+.partner-images{
+    background-color: #272A32;
+    padding: 2%;
+}
+.partner-logo{
+    max-height:10%;
+    max-width:20%;
+}
+.partner-images-container{
+display:flex;
+justify-content: space-evenly;
+margin:5%;
+}
+.creative-commons{
+    max-width:100%;
+    align-self: center;
+}
+footer{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:5%;
+    padding:5%;
 }
