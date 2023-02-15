@@ -46,6 +46,18 @@ body{
         max-width:100%;
         align-self: center;
     }
+    .chef-card-img{
+        width:90%;
+        height:90%;
+    }
+    
+    .chef-card-name{
+        font-weight:700;
+    }
+    .chef-card-occupation{
+        font-style:italic;
+        color:#f5422e;
+    }
 /*Mobile*/
 @media screen and (max-width: 768px){
     .desk-nav{
@@ -179,6 +191,10 @@ body{
         font-weight: 600;
         padding: 5%;
     }
+    .featured-chefs-list{
+        list-style-type: none;
+        margin-top: 2%;
+    }
 
 }
 /*DEsktop Styles*/
@@ -231,15 +247,16 @@ align-items: center;
             width:60%;
         }
         .further-info{
-            text-align: center;
             width:80%;
-            margin:auto;
             font-weight: 600;
-            padding:2%;
         }
 .welcome-container{
     margin-top: 5%;
     margin-left:5%;
+    margin-bottom: 8%;
+}
+.welcome-message{
+    padding:2%;
 }
 .main-program{
     position:relative;
@@ -247,6 +264,7 @@ align-items: center;
   background-color: #272A32;
     font-family: Lato, Arial, Helvetica, sans;
     color:#ffffff;
+    margin-bottom: 78px;
 }
 .program-card-entry{
     color:#f5422e;
@@ -279,13 +297,59 @@ align-items: center;
     text-align: center;
     margin-bottom:1%;
 }
-.partners{
-    position:relative;
-    top:20px;
-}
 .red-line1{
     width:55px;
     height:1px;
 background-color: #f5422e;
 margin:auto;
+}
+.featured-chefs{
+    margin-bottom: 10%;
+}
+.about-page-info{
+    margin: 10%;
+    padding:2%;
+}
+.shakys-logo{
+    width: 100%;
+    height: 100%;
+}
+.section-2{
+    position:relative;
+    top:72px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+.about-shakys{
+    text-align: center;
+}
+.past-event{
+    background-color: #f5422e;
+    background-image: url(./images/food.png);
+}
+.past-event-item{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 5%;
+}
+.past-event-container{
+    display:flex;
+    margin:10%;
+    gap:5%;
+}
+.featured-chefs-list{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin:2%;
+    gap:2%;
+    list-style-type: none;
+}
+.chef-card{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2%;
+}
 }
