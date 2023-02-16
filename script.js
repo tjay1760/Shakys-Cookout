@@ -64,3 +64,19 @@ chefs.forEach(element => {
     chefcard.appendChild(chefcardcontent);
     chefList.appendChild(chefcard);
 });
+//Hamburger menu
+const openMenu= document.querySelector('.hamburger-icon');
+const mobileMenu = document.querySelector('.drop-menu');
+openMenu.addEventListener('click', () => {
+mobileMenu.classList.toggle('hidden-menu');
+const partners=document.querySelector('.partners');
+
+
+});
+
+  const morebtn=document.querySelector('.more');
+  morebtn.addEventListener('click', () => {
+    morebtn.classList.toggle('hidden-menu');
+    partners.classList.toggle('hidden-menu');
+  });
+

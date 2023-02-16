@@ -1,4 +1,10 @@
 /*Global Styles*/
+.test{
+    width:120px;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
 body{
     font-family: Lato,Arial, Helvetica, sans-serif;
 }
@@ -60,6 +66,43 @@ body{
     }
 /*Mobile*/
 @media screen and (max-width: 768px){
+    .close-button{
+        float:right;
+        margin-right: 3%;
+        margin-top: 1%;
+        color:#ffffff;
+    }
+    
+    .drop-menu{
+        position:absolute;
+        background-color: #080808;
+        width:100%;
+        height:100vh;
+        z-index:4;
+        margin:0%;
+    }
+    
+    .hidden-menu{
+        display:none;
+    }
+    .nav-menu{
+        list-style-type: none;
+    }
+    .nav-menu-item{
+        margin-top: 5%;
+        margin-bottom:5%;
+        border-bottom: 2px solid #fff;
+        padding-left: 0%;
+        margin-left: 0%;
+    }
+    .nav-link{
+        text-decoration: none;
+        color:#f5422e;
+        font-weight:700;
+    }
+    .top-bar{
+        display:none;
+    }
     .desk-nav{
         display: none;
     }
@@ -74,6 +117,7 @@ body{
         height: 1px;
         background-color: rgba(0,0,0,0.1);
     }
+    
     .welcome-container{
         margin-top: 2%;
         margin-left:2%;
@@ -195,12 +239,40 @@ body{
         list-style-type: none;
         margin-top: 2%;
     }
-
+    .see-whole{
+        display:none;
+    }
+    
 }
 /*DEsktop Styles*/
 @media only screen and (min-width: 768px) {
     .mobile{
         display: none;
+    }
+    .social-icon{
+        width: 15px;
+        height: 15px;
+    }
+    .top-bar{
+        width:100%;
+        height:26px;
+        background-color: #000;
+        z-index:1;
+        position:fixed;
+        top:0;
+    }
+    .top-bar ul{
+        list-style-type: none;
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-top: 0%;
+        padding-right: 1%;
+        gap:2%;
+    }
+    .top-bar ul li a{
+        color:#fff;
+        text-decoration: none;
     }
     .logo{
         width:10%;
@@ -211,7 +283,7 @@ body{
         background-color: #f7f7f7;
         position:fixed;
         z-index: 2;
-        top:0;
+        top:26px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
         background-image: radial-gradient(circle at center, #ffffff, #f7f7f7);
 
@@ -227,10 +299,15 @@ gap:25%;
 justify-content: flex-end;
 align-items: center;
    }
+   .desk-nav-link{
+    text-decoration: none;
+    color:#000;
+   }
    .register-now{
     border: 5px solid #f5422e;
     height:50%;
-    padding: 1%;
+    padding: 0.5%;
+    margin: 1%;
    }
     .intro-container{
         background-image: url(./images/food.png);
@@ -265,6 +342,7 @@ align-items: center;
     font-family: Lato, Arial, Helvetica, sans;
     color:#ffffff;
     margin-bottom: 78px;
+    padding-bottom: 8%;
 }
 .program-card-entry{
     color:#f5422e;
@@ -352,4 +430,12 @@ margin:auto;
     grid-template-columns:1fr 1fr;
     gap:2%;
 }
+.see-whole{
+text-align: center;
+margin-top: 6%;
+color:#ffffff;
+}
+.see-whole a{
+    color:#ffffff;
+    text-decoration: underline;
 }
