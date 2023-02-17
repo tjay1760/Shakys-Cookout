@@ -1,441 +1,532 @@
-/*Global Styles*/
-.test{
-    width:120px;
-    height: 120px;
-    border: 1px solid black;
-    border-radius: 50%;
+/* Global Styles */
+.test {
+  width: 120px;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 50%;
 }
-body{
-    font-family: Lato,Arial, Helvetica, sans-serif;
-}
-.headings{
-    color: #f5422e;
-}
-.topic{
-    font-weight: 900;
-}
-.quote{
-    font-size: 18px;
-}
-.intro-container{
-    background-image: url(./images/food.png);
-    margin:0;
-    border: 1px solid whitesmoke;
-    background-size: cover;
-    }
-    .partner-images{
-        background-color: #272A32;
-        padding: 2%;
-    }
-    .partner-logo{
-        max-height:10%;
-        max-width:20%;
-    }
-    .partner-images-container{
-    display:flex;
-    justify-content: space-evenly;
-    margin:5%;
-    }
-    footer{
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:5%;
-        padding:5%;
-    
-    }
-    .footer-text{
-        border:1px solid gray;
-        padding:15%;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
-    .creative-commons{
-        max-width:100%;
-        align-self: center;
-    }
-    .chef-card-img{
-        width:90%;
-        height:90%;
-    }
-    
-    .chef-card-name{
-        font-weight:700;
-    }
-    .chef-card-occupation{
-        font-style:italic;
-        color:#f5422e;
-    }
-/*Mobile*/
-@media screen and (max-width: 768px){
-    .close-button{
-        float:right;
-        margin-right: 3%;
-        margin-top: 1%;
-        color:#ffffff;
-    }
-    
-    .drop-menu{
-        position:absolute;
-        background-color: #080808;
-        width:100%;
-        height:100vh;
-        z-index:4;
-        margin:0%;
-    }
-    
-    .hidden-menu{
-        display:none;
-    }
-    .nav-menu{
-        list-style-type: none;
-    }
-    .nav-menu-item{
-        margin-top: 5%;
-        margin-bottom:5%;
-        border-bottom: 2px solid #fff;
-        padding-left: 0%;
-        margin-left: 0%;
-    }
-    .nav-link{
-        text-decoration: none;
-        color:#f5422e;
-        font-weight:700;
-    }
-    .top-bar{
-        display:none;
-    }
-    .desk-nav{
-        display: none;
-    }
-    .hamburger-icon{
-        margin: 2%;
-    }
-    .fa-bars{
-        font-size: 30px;
-    }
-    .nav-line{
-        width:100%;
-        height: 1px;
-        background-color: rgba(0,0,0,0.1);
-    }
-    
-    .welcome-container{
-        margin-top: 2%;
-        margin-left:2%;
-    }
-    .home-message{
-        background-color:#f7f7f7;
-        border: 2px solid #ffffff;
-        box-shadow: 5px 5px 5px 0px #888888, -5px -5px 5px 0px #888888;
-    }
-    .further-info{
-        text-align: center;
-        width:80%;
-        margin:auto;
-        font-weight: 600;
-        padding:2%;
-    }
 
-    .time{
-        font-family: Lato, Arial, Helvetica, sans;
-        font-weight: 700;
-        font-size: 16px;    
-    }
-    .location{
-        margin-bottom: 0%;
-    }
-    .main-program{
-        background-color: #272A32;
-        font-family: Lato, Arial, Helvetica, sans;
-        color:#ffffff;
-    }
-    .main-program-heading{
-        font-size: 25px;
-        text-align: center;
-        margin-bottom:1%;
-    }
-    .card{
-        background-color: rgba(105, 104, 104, 0.685);
-        display:grid;
-        grid-template-columns: 1fr 2fr 3fr;
-        padding: 2%;
-        margin:2%;
-        align-items: center;
-    }
-    .card-icon{
-        font-size: 30px;
-    }
-    .red-line1{
-        width:25px;
-        height:1px;
-    background-color: #f5422e;
-    margin:auto;
-    
-    }
-    .fa-smile-tongue{
-        font-size: 25px;
-    }
-    .icon{
-        height:40px;
-        width:40px;
-    }
-    .program-card-entry{
-        color:#f5422e;
-        font-size: 18px;
-        font-weight: 700;
-    }
-    .register-button{
-        background-color: #f5422e;
-        color:#ffffff;
-        width:50%;
-        height:2%;
-        margin:10% 25% 10% 25%;
-        padding:2%;
-        border-radius: 0%;
-        font-family: Lato, arial, helvetica, sans;
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .more{
-        margin-top: 2%;
-    }
-    .down-arrow{
-        width:18px;
-        height:20px;
-        margin-left: 10px;
-    }
-   
-    
-    /*styles for about-page*/
-    .shakys-logo{
-        width:100%;
-        height:100%;
-        border: 2px solid #fff;
-        transition: transform 0.9s ease-in-out;
-    }
-    .shakys-logo:hover{
-        transform: scale(1.1);
-    }
-    .section-2{
-        background-color: #f7f7f7;
-    }
-    .about-shakys{
-        text-align: center;
-    }
-    .past-event{
-        background-color: #f5422e;
-        background-image: url(./images/food.png);
-        width:70%;
-        margin:auto;
-    }
-    .past-event-item{
-        text-align: center;
-        color: black;
-        font-size: 20px;
-        font-weight: 600;
-        padding: 5%;
-    }
-    .featured-chefs-list{
-        list-style-type: none;
-        margin-top: 2%;
-    }
-    .see-whole{
-        display:none;
-    }
-    
+body {
+  font-family: Lato, Arial, Helvetica, sans-serif;
 }
-/*DEsktop Styles*/
-@media only screen and (min-width: 768px) {
-    .mobile{
-        display: none;
-    }
-    .social-icon{
-        width: 15px;
-        height: 15px;
-    }
-    .top-bar{
-        width:100%;
-        height:26px;
-        background-color: #000;
-        z-index:1;
-        position:fixed;
-        top:0;
-    }
-    .top-bar ul{
-        list-style-type: none;
-        display:flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        padding-top: 0%;
-        padding-right: 1%;
-        gap:2%;
-    }
-    .top-bar ul li a{
-        color:#fff;
-        text-decoration: none;
-    }
-    .logo{
-        width:10%;
-    }
-    header{
-        display:flex;
-        flex-direction: column-reverse;
-        background-color: #f7f7f7;
-        position:fixed;
-        z-index: 2;
-        top:26px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-        background-image: radial-gradient(circle at center, #ffffff, #f7f7f7);
 
-    }
-    .desk-nav{
-        display:flex;
-        justify-content: space-around;
-    }
-   .desk-nav-menu{
+.headings {
+  color: #f5422e;
+}
+
+.topic {
+  font-weight: 900;
+}
+
+.quote {
+  font-size: 18px;
+}
+
+.intro-container {
+  background-image: url(./images/food.png);
+  margin: 0;
+  border: 1px solid whitesmoke;
+  background-size: cover;
+}
+
+.partner-images {
+  background-color: #272a32;
+  padding: 2%;
+}
+
+.partner-logo {
+  max-height: 10%;
+  max-width: 20%;
+}
+
+.partner-images-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5%;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+  padding: 5%;
+}
+
+.footer-text {
+  border: 1px solid gray;
+  padding: 15%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.creative-commons {
+  max-width: 100%;
+  align-self: center;
+}
+
+.chef-card-img {
+  width: 90%;
+  height: 90%;
+}
+
+.chef-card-name {
+  font-weight: 700;
+}
+
+.chef-card-occupation {
+  font-style: italic;
+  color: #f5422e;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .close-button {
+    float: right;
+    margin-right: 3%;
+    margin-top: 1%;
+    color: #fff;
+  }
+
+  .drop-menu {
+    position: absolute;
+    background-color: #080808;
+    width: 100%;
+    height: 100vh;
+    z-index: 4;
+    margin: 0%;
+  }
+
+  .hidden-menu {
+    display: none;
+  }
+
+  .nav-menu {
     list-style-type: none;
-    display:flex;
-gap:25%;
-justify-content: flex-end;
-align-items: center;
-   }
-   .desk-nav-link{
-    text-decoration: none;
-    color:#000;
-   }
-   .register-now{
-    border: 5px solid #f5422e;
-    height:50%;
-    padding: 0.5%;
-    margin: 1%;
-   }
-    .intro-container{
-        background-image: url(./images/food.png);
-        margin:0;
-        border: 1px solid whitesmoke;
-        background-size: cover;
-        position:relative;
-        top:72px;
-        }
-        .home-message{
-            background-color:#f7f7f7;
-            border: 2px solid #ffffff;
-            box-shadow: 5px 5px 5px 0px #888888, -5px -5px 5px 0px #888888;
-            width:60%;
-        }
-        .further-info{
-            width:80%;
-            font-weight: 600;
-        }
-.welcome-container{
+  }
+
+  .nav-menu-item {
     margin-top: 5%;
-    margin-left:5%;
-    margin-bottom: 8%;
-}
-.welcome-message{
-    padding:2%;
-}
-.main-program{
-    position:relative;
-    top:72px;
-  background-color: #272A32;
-    font-family: Lato, Arial, Helvetica, sans;
-    color:#ffffff;
-    margin-bottom: 78px;
-    padding-bottom: 8%;
-}
-.program-card-entry{
-    color:#f5422e;
+    margin-bottom: 5%;
+    border-bottom: 2px solid #fff;
+    padding-left: 0%;
+    margin-left: 0%;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: #f5422e;
+    font-weight: 700;
+  }
+
+  .top-bar {
+    display: none;
+  }
+
+  .desk-nav {
+    display: none;
+  }
+
+  .hamburger-icon {
+    margin: 2%;
+  }
+
+  .fa-bars {
+    font-size: 30px;
+  }
+
+  .nav-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .welcome-container {
+    margin-top: 2%;
+    margin-left: 2%;
+  }
+
+  .home-message {
+    background-color: #f7f7f7;
+    border: 2px solid #fff;
+    box-shadow: 5px 5px 5px 0 #888, -5px -5px 5px 0 #888;
+  }
+
+  .further-info {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-weight: 600;
+    padding: 2%;
+  }
+
+  .time {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .location {
+    margin-bottom: 0%;
+  }
+
+  .main-program {
+    background-color: #272a32;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+  }
+
+  .main-program-heading {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 1%;
+  }
+
+  .card {
+    background-color: rgba(105, 104, 104, 0.685);
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    padding: 2%;
+    margin: 2%;
+    align-items: center;
+  }
+
+  .card-icon {
+    font-size: 30px;
+  }
+
+  .red-line1 {
+    width: 25px;
+    height: 1px;
+    background-color: #f5422e;
+    margin: auto;
+  }
+
+  .fa-smile-tongue {
+    font-size: 25px;
+  }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .program-card-entry {
+    color: #f5422e;
     font-size: 18px;
     font-weight: 700;
+  }
+
+  .register-button {
+    background-color: #f5422e;
+    color: #fff;
+    width: 50%;
+    height: 2%;
+    margin: 10% 25% 10% 25%;
+    padding: 2%;
+    border-radius: 0%;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .more {
+    margin-top: 2%;
+  }
+
+  .down-arrow {
+    width: 18px;
+    height: 20px;
+    margin-left: 10px;
+  }
+
+
+  /* styles for about-page */
+  .shakys-logo {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    transition: transform 0.9s ease-in-out;
+  }
+
+  .shakys-logo:hover {
+    transform: scale(1.1);
+  }
+
+  .section-2 {
+    background-color: #f7f7f7;
+  }
+
+  .about-shakys {
+    text-align: center;
+  }
+
+  .past-event {
+    background-color: #f5422e;
+    background-image: url(./images/food.png);
+    width: 70%;
+    margin: auto;
+  }
+
+  .past-event-item {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5%;
+  }
+
+  .featured-chefs-list {
+    list-style-type: none;
+    margin-top: 2%;
+  }
+
+  .see-whole {
+    display: none;
+  }
 }
-.card{
+
+/* DEsktop Styles */
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .social-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .top-bar {
+    width: 100%;
+    height: 26px;
+    background-color: #000;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+  }
+
+  .top-bar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 0%;
+    padding-right: 1%;
+    gap: 2%;
+  }
+
+  .see-whole a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .top-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .logo {
+    width: 40%;
+    margin-left: 30%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #f7f7f7;
+    position: fixed;
+    z-index: 2;
+    top: 26px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    background-image: radial-gradient(circle at center, #fff, #f7f7f7);
+  }
+
+  .desk-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .desk-nav-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 25%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .desk-nav-link {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .register-now {
+    border: 5px solid #f5422e;
+    height: 50%;
+    padding: 0.5%;
+    margin: 1%;
+  }
+
+  .intro-container {
+    background-image: url(./images/food.png);
+    margin: 0;
+    border: 1px solid whitesmoke;
+    background-size: cover;
+    position: relative;
+    top: 72px;
+  }
+
+  .home-message {
+    background-color: #f7f7f7;
+    border: 2px solid #fff;
+    box-shadow: 5px 5px 5px 0 #888, -5px -5px 5px 0 #888;
+    width: 60%;
+  }
+
+  .further-info {
+    width: 80%;
+    font-weight: 600;
+  }
+
+  .welcome-container {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 8%;
+  }
+
+  .welcome-message {
+    padding: 2%;
+  }
+
+  .main-program {
+    position: relative;
+    top: 72px;
+    background-color: #272a32;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    margin-bottom: 78px;
+    padding-bottom: 8%;
+  }
+
+  .program-card-entry {
+    color: #f5422e;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .card {
     background-color: rgba(105, 104, 104, 0.685);
-    display:flex;
-}
-.icon{
+    display: flex;
+  }
+
+  .icon {
     font-size: 30px;
-    margin:0%;
-    height:40px;
-    width:40px;
+    margin: 0%;
+    height: 40px;
+    width: 40px;
     align-self: center;
-}
-.program-card-entry, .program-card-desc{
+  }
+
+  .program-card-entry,
+  .program-card-desc {
     margin: 0%;
     text-align: center;
     height: 100%;
-}
-.program-cards{
-    display:flex;
-    gap:2%;
-    margin:2%;
-}
-.main-program-heading{
+  }
+
+  .program-cards {
+    display: flex;
+    gap: 2%;
+    margin: 2%;
+  }
+
+  .main-program-heading {
     font-size: 25px;
     text-align: center;
-    margin-bottom:1%;
-}
-.red-line1{
-    width:55px;
-    height:1px;
-background-color: #f5422e;
-margin:auto;
-}
-.featured-chefs{
+    margin-bottom: 1%;
+  }
+
+  .red-line1 {
+    width: 55px;
+    height: 1px;
+    background-color: #f5422e;
+    margin: auto;
+  }
+
+  .featured-chefs {
     margin-bottom: 10%;
-}
-.about-page-info{
+  }
+
+  .about-page-info {
     margin: 10%;
-    padding:2%;
-}
-.shakys-logo{
+    padding: 2%;
+  }
+
+  .shakys-logo {
     width: 100%;
     height: 100%;
-}
-.section-2{
-    position:relative;
-    top:72px;
+  }
+
+  .section-2 {
+    position: relative;
+    top: 72px;
     margin-top: 2%;
     margin-bottom: 10%;
-}
-.about-shakys{
+  }
+
+  .about-shakys {
     text-align: center;
-}
-.past-event{
+  }
+
+  .past-event {
     background-color: #f5422e;
     background-image: url(./images/food.png);
-}
-.past-event-item{
+  }
+
+  .past-event-item {
     text-align: center;
     color: black;
     font-size: 40px;
     font-weight: 600;
     padding: 5%;
-}
-.past-event-container{
-    display:flex;
-    margin:10%;
-    gap:5%;
-}
-.featured-chefs-list{
-    display:grid;
-    grid-template-columns:1fr 1fr;
+  }
+
+  .past-event-container {
+    display: flex;
+    margin: 10%;
+    gap: 5%;
+  }
+
+  .featured-chefs-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    margin:2%;
-    gap:2%;
+    margin: 2%;
+    gap: 2%;
     list-style-type: none;
-}
-.chef-card{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:2%;
-}
-.see-whole{
-text-align: center;
-margin-top: 6%;
-color:#ffffff;
-}
-.see-whole a{
-    color:#ffffff;
-    text-decoration: underline;
+  }
+
+  .chef-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+  }
+
+  .see-whole {
+    text-align: center;
+    margin-top: 6%;
+    color: #fff;
+  }
+
+  .image {
+    border: 2px solid red;
+    width: 20%;
+  }
+
+  .imagea {
+    width: 20%;
+    height: 70px;
+  }
+
+  .logo-home {
+    width: 10%;
+  }
 }
