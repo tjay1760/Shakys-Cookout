@@ -94,7 +94,7 @@ OPTIONAL SECTIONS:
 
 Here's a video explaining the project
 
-- [Video Link](https://www.loom.com/share/2d32bc30a7914da8a5d9f4a4d26b5d47)
+- [Video Link](https://www.loom.com/share/ea75d89b298844b3a8657f4d9e6ed5f8)
 
 <!-- GETTING STARTED -->
 
