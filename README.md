@@ -40,14 +40,11 @@ OPTIONAL SECTIONS:
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  -[Project Overview](#overview)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
+  -- [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -87,9 +84,17 @@ OPTIONAL SECTIONS:
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://tjay1760.github.io/Capstone-project-1/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- PROJECT OVERVIEW -->
+<a name="overview"></a>
+
+Here's a video explaining the project
+
+- [Video Link](https://www.loom.com/share/2d32bc30a7914da8a5d9f4a4d26b5d47)
 
 <!-- GETTING STARTED -->
 
