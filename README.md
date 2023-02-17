@@ -170,7 +170,7 @@ If you like this project give it a star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Cindy Shin For allowing me to use her design.
+I would like to thank Cindy Shin.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
