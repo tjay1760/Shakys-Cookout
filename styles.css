@@ -47,25 +47,29 @@ body {
 
 footer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 5%;
-  padding: 5%;
+  padding: 0%;
+  height:18px;
 }
 
 .footer-text {
-  border: 1px solid gray;
   padding: 15%;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding-left: 0%;
+  font-size:14px;
+text-align: left;
+
 }
 
 .creative-commons {
-  max-width: 100%;
+  max-width: 55%;
   align-self: center;
+margin-left: 50%;
 }
 
 .chef-card-img {
-  width: 90%;
-  height: 90%;
+  width: 150px;
+  height: 150px;
 }
 
 .chef-card-name {
@@ -76,14 +80,27 @@ footer {
   font-style: italic;
   color: #f5422e;
 }
-
+.about-footer{
+    background-color: #2e2e2e;
+    height: 100%;
+    
+}
+.f-text{
+    color:#fff;
+}
+.further-info-email{
+    text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+}
 /* Mobile */
 @media screen and (max-width: 768px) {
   .close-button {
     float: right;
-    margin-right: 3%;
-    margin-top: 1%;
+    margin-right: 5%;
+    margin-top: 2%;
     color: #fff;
+    z-index: 7;
   }
 
   .drop-menu {
@@ -93,6 +110,8 @@ footer {
     height: 100vh;
     z-index: 4;
     margin: 0%;
+    top:0;
+    left:0;
   }
 
   .hidden-menu {
@@ -159,13 +178,15 @@ footer {
   }
 
   .time {
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    font-weight:900;
     font-size: 16px;
+    margin-top: 5%;
+    margin-bottom: 0%;
   }
 
   .location {
-    margin-bottom: 0%;
+    margin-bottom: 15%;
   }
 
   .main-program {
@@ -281,8 +302,36 @@ footer {
   .see-whole {
     display: none;
   }
+  .chef-card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2%;
+    padding-left: 0%;
+    margin-left: 0%;
+    
 }
+.chef-card-img {
+width:100%;
+height:90%;
+align-self: center;
+  }
+  .chef-card-name {
+    font-weight: 700;
+    font-size: 15px;
+    margin:1%;
+  }
+  
+  .chef-card-occupation {
+    font-size: 14px;
+    font-style: italic;
+    color: #f5422e;
+    margin:1%;
+  }
+  .chef-card-about{
+    font-size: 11px;
 
+  }
+}
 /* DEsktop Styles */
 @media only screen and (min-width: 768px) {
   .mobile {
@@ -377,21 +426,24 @@ footer {
     background-color: #f7f7f7;
     border: 2px solid #fff;
     box-shadow: 5px 5px 5px 0 #888, -5px -5px 5px 0 #888;
-    width: 60%;
+    width: 100%;
   }
 
   .further-info {
-    width: 80%;
-    font-weight: 600;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 7%;
   }
 
   .welcome-container {
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-top: 12%;
+    margin-left: 12%;
     margin-bottom: 8%;
   }
 
   .welcome-message {
+    margin-top: 2%;
     padding: 2%;
   }
 
@@ -452,11 +504,12 @@ footer {
 
   .featured-chefs {
     margin-bottom: 10%;
+    margin-top: 9%;
   }
 
   .about-page-info {
     margin: 10%;
-    padding: 2%;
+    margin-left: 20%;
   }
 
   .shakys-logo {
@@ -505,7 +558,7 @@ footer {
 
   .chef-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 2%;
   }
 
@@ -528,4 +581,25 @@ footer {
   .logo-home {
     width: 10%;
   }
+
+  .time {
+    font-family: 'Lato', sans-serif;
+    font-weight:900;
+    font-size: 28px;
+    margin-top:4%;
+    color:#414246;
+  }
+  .about-topic{
+    padding-left:15%;
+    font-weight: 900;
+  }
+  .about-welcome-message{
+    padding:2%;
+    margin-left:0%;
+    width:100%;
+  }
+  .about-h-message{
+    margin-top: 9%;
+  }
+  
 }
