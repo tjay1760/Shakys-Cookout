@@ -50,21 +50,20 @@ footer {
   grid-template-columns: 1fr 2fr;
   gap: 5%;
   padding: 0%;
-  height:18px;
+  height: 18px;
 }
 
 .footer-text {
   padding: 15%;
   padding-left: 0%;
-  font-size:14px;
-text-align: left;
-
+  font-size: 14px;
+  text-align: left;
 }
 
 .creative-commons {
   max-width: 55%;
   align-self: center;
-margin-left: 50%;
+  margin-left: 50%;
 }
 
 .chef-card-img {
@@ -80,19 +79,22 @@ margin-left: 50%;
   font-style: italic;
   color: #f5422e;
 }
-.about-footer{
-    background-color: #2e2e2e;
-    height: 100%;
-    
+
+.about-footer {
+  background-color: #2e2e2e;
+  height: 100%;
 }
-.f-text{
-    color:#fff;
+
+.f-text {
+  color: #fff;
 }
-.further-info-email{
-    text-align: center;
-    font-weight: 700;
-    text-decoration: underline;
+
+.further-info-email {
+  text-align: center;
+  font-weight: 700;
+  text-decoration: underline;
 }
+
 /* Mobile */
 @media screen and (max-width: 768px) {
   .close-button {
@@ -110,8 +112,8 @@ margin-left: 50%;
     height: 100vh;
     z-index: 4;
     margin: 0%;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
   }
 
   .hidden-menu {
@@ -179,7 +181,7 @@ margin-left: 50%;
 
   .time {
     font-family: 'Lato', sans-serif;
-    font-weight:900;
+    font-weight: 900;
     font-size: 16px;
     margin-top: 5%;
     margin-bottom: 0%;
@@ -302,36 +304,39 @@ margin-left: 50%;
   .see-whole {
     display: none;
   }
+
   .chef-card {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 2%;
     padding-left: 0%;
     margin-left: 0%;
-    
-}
-.chef-card-img {
-width:100%;
-height:90%;
-align-self: center;
   }
+
+  .chef-card-img {
+    width: 100%;
+    height: 90%;
+    align-self: center;
+  }
+
   .chef-card-name {
     font-weight: 700;
     font-size: 15px;
-    margin:1%;
+    margin: 1%;
   }
-  
+
   .chef-card-occupation {
     font-size: 14px;
     font-style: italic;
     color: #f5422e;
-    margin:1%;
+    margin: 1%;
   }
-  .chef-card-about{
-    font-size: 11px;
 
+  .chef-card-about {
+    font-size: 11px;
   }
 }
+
 /* DEsktop Styles */
 @media only screen and (min-width: 768px) {
   .mobile {
@@ -584,22 +589,24 @@ align-self: center;
 
   .time {
     font-family: 'Lato', sans-serif;
-    font-weight:900;
+    font-weight: 900;
     font-size: 28px;
-    margin-top:4%;
-    color:#414246;
+    margin-top: 4%;
+    color: #414246;
   }
-  .about-topic{
-    padding-left:15%;
+
+  .about-topic {
+    padding-left: 15%;
     font-weight: 900;
   }
-  .about-welcome-message{
-    padding:2%;
-    margin-left:0%;
-    width:100%;
+
+  .about-welcome-message {
+    padding: 2%;
+    margin-left: 0%;
+    width: 100%;
   }
-  .about-h-message{
+
+  .about-h-message {
     margin-top: 9%;
   }
-  
 }
