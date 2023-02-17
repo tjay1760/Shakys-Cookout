@@ -1,9 +1,6 @@
 /* Global Styles */
-.test {
-  width: 120px;
-  height: 120px;
-  border: 1px solid black;
-  border-radius: 50%;
+.no-scroll {
+  overflow-y: hidden;
 }
 
 body {
@@ -12,10 +9,6 @@ body {
 
 .headings {
   color: #f5422e;
-}
-
-.topic {
-  font-weight: 900;
 }
 
 .quote {
@@ -97,6 +90,12 @@ footer {
 
 /* Mobile */
 @media screen and (max-width: 768px) {
+  .topic {
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 7%;
+  }
+
   .close-button {
     float: right;
     margin-right: 5%;
@@ -161,7 +160,7 @@ footer {
   }
 
   .welcome-container {
-    margin-top: 2%;
+    margin-top: 15%;
     margin-left: 2%;
   }
 
@@ -169,13 +168,15 @@ footer {
     background-color: #f7f7f7;
     border: 2px solid #fff;
     box-shadow: 5px 5px 5px 0 #888, -5px -5px 5px 0 #888;
+    margin: 2%;
+    margin-bottom: 5%;
   }
 
   .further-info {
     text-align: center;
     width: 80%;
     margin: auto;
-    font-weight: 600;
+    font-weight: 400;
     padding: 2%;
   }
 
@@ -263,10 +264,11 @@ footer {
 
   /* styles for about-page */
   .shakys-logo {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     border: 2px solid #fff;
     transition: transform 0.9s ease-in-out;
+    margin: 25%;
   }
 
   .shakys-logo:hover {
@@ -334,6 +336,20 @@ footer {
 
   .chef-card-about {
     font-size: 11px;
+  }
+
+  .about-h-message {
+    margin: 5%;
+    padding: 2%;
+    margin-top: 9%;
+    background-color: #fff;
+    border: 2px solid #d6d6d6;
+  }
+
+  .about-topic {
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
   }
 }
 
@@ -431,7 +447,9 @@ footer {
     background-color: #f7f7f7;
     border: 2px solid #fff;
     box-shadow: 5px 5px 5px 0 #888, -5px -5px 5px 0 #888;
-    width: 100%;
+    width: 55%;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
 
   .further-info {
@@ -450,6 +468,7 @@ footer {
   .welcome-message {
     margin-top: 2%;
     padding: 2%;
+    width: 100%;
   }
 
   .main-program {
@@ -518,8 +537,9 @@ footer {
   }
 
   .shakys-logo {
-    width: 100%;
-    height: 100%;
+    width: 40%;
+    height: 40%;
+    margin: 25%;
   }
 
   .section-2 {
@@ -608,5 +628,21 @@ footer {
 
   .about-h-message {
     margin-top: 9%;
+    background-color: #fff;
+    border: 2px solid #d6d6d6;
+  }
+
+  .quote {
+    font-size: 35px;
+  }
+
+  .topic {
+    font-weight: 900;
+    font-size: 50px;
+  }
+
+  .location {
+    margin-bottom: 15%;
+    font-size: 20px;
   }
 }
