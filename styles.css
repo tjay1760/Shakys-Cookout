@@ -1,0 +1,648 @@
+/* Global Styles */
+.no-scroll {
+  overflow-y: hidden;
+}
+
+body {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+.headings {
+  color: #f5422e;
+}
+
+.quote {
+  font-size: 18px;
+}
+
+.intro-container {
+  background-image: url(./images/food.png);
+  margin: 0;
+  border: 1px solid whitesmoke;
+  background-size: cover;
+}
+
+.partner-images {
+  background-color: #272a32;
+  padding: 2%;
+}
+
+.partner-logo {
+  max-height: 10%;
+  max-width: 20%;
+}
+
+.partner-images-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5%;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5%;
+  padding: 0%;
+  height: 18px;
+}
+
+.footer-text {
+  padding: 15%;
+  padding-left: 0%;
+  font-size: 14px;
+  text-align: left;
+}
+
+.creative-commons {
+  max-width: 55%;
+  align-self: center;
+  margin-left: 50%;
+}
+
+.chef-card-img {
+  width: 150px;
+  height: 150px;
+}
+
+.chef-card-name {
+  font-weight: 700;
+}
+
+.chef-card-occupation {
+  font-style: italic;
+  color: #f5422e;
+}
+
+.about-footer {
+  background-color: #2e2e2e;
+  height: 100%;
+}
+
+.f-text {
+  color: #fff;
+}
+
+.further-info-email {
+  text-align: center;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .topic {
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 7%;
+  }
+
+  .close-button {
+    float: right;
+    margin-right: 5%;
+    margin-top: 2%;
+    color: #fff;
+    z-index: 7;
+  }
+
+  .drop-menu {
+    position: absolute;
+    background-color: #080808;
+    width: 100%;
+    height: 100vh;
+    z-index: 4;
+    margin: 0%;
+    top: 0;
+    left: 0;
+  }
+
+  .hidden-menu {
+    display: none;
+  }
+
+  .nav-menu {
+    list-style-type: none;
+  }
+
+  .nav-menu-item {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-bottom: 2px solid #fff;
+    padding-left: 0%;
+    margin-left: 0%;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: #f5422e;
+    font-weight: 700;
+  }
+
+  .top-bar {
+    display: none;
+  }
+
+  .desk-nav {
+    display: none;
+  }
+
+  .hamburger-icon {
+    margin: 2%;
+  }
+
+  .fa-bars {
+    font-size: 30px;
+  }
+
+  .nav-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .welcome-container {
+    margin-top: 15%;
+    margin-left: 2%;
+  }
+
+  .home-message {
+    background-color: #f7f7f7;
+    border: 2px solid #fff;
+    box-shadow: 5px 5px 5px 0 #888, -5px -5px 5px 0 #888;
+    margin: 2%;
+    margin-bottom: 5%;
+  }
+
+  .further-info {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-weight: 400;
+    padding: 2%;
+  }
+
+  .time {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    margin-top: 5%;
+    margin-bottom: 0%;
+  }
+
+  .location {
+    margin-bottom: 15%;
+  }
+
+  .main-program {
+    background-color: #272a32;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+  }
+
+  .main-program-heading {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 1%;
+  }
+
+  .card {
+    background-color: rgba(105, 104, 104, 0.685);
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    padding: 2%;
+    margin: 2%;
+    align-items: center;
+  }
+
+  .card-icon {
+    font-size: 30px;
+  }
+
+  .red-line1 {
+    width: 25px;
+    height: 1px;
+    background-color: #f5422e;
+    margin: auto;
+  }
+
+  .fa-smile-tongue {
+    font-size: 25px;
+  }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .program-card-entry {
+    color: #f5422e;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .register-button {
+    background-color: #f5422e;
+    color: #fff;
+    width: 50%;
+    height: 2%;
+    margin: 10% 25% 10% 25%;
+    padding: 2%;
+    border-radius: 0%;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .more {
+    margin-top: 2%;
+  }
+
+  .down-arrow {
+    width: 18px;
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  /* styles for about-page */
+  .shakys-logo {
+    width: 50%;
+    height: 50%;
+    border: 2px solid #fff;
+    transition: transform 0.9s ease-in-out;
+    margin: 25%;
+  }
+
+  .shakys-logo:hover {
+    transform: scale(1.1);
+  }
+
+  .section-2 {
+    background-color: #f7f7f7;
+  }
+
+  .about-shakys {
+    text-align: center;
+  }
+
+  .past-event {
+    background-color: #f5422e;
+    background-image: url(./images/food.png);
+    width: 70%;
+    margin: auto;
+  }
+
+  .past-event-item {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5%;
+  }
+
+  .featured-chefs-list {
+    list-style-type: none;
+    margin-top: 2%;
+  }
+
+  .see-whole {
+    display: none;
+  }
+
+  .chef-card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2%;
+    padding-left: 0%;
+    margin-left: 0%;
+  }
+
+  .chef-card-img {
+    width: 100%;
+    height: 90%;
+    align-self: center;
+  }
+
+  .chef-card-name {
+    font-weight: 700;
+    font-size: 15px;
+    margin: 1%;
+  }
+
+  .chef-card-occupation {
+    font-size: 14px;
+    font-style: italic;
+    color: #f5422e;
+    margin: 1%;
+  }
+
+  .chef-card-about {
+    font-size: 11px;
+  }
+
+  .about-h-message {
+    margin: 5%;
+    padding: 2%;
+    margin-top: 9%;
+    background-color: #fff;
+    border: 2px solid #d6d6d6;
+  }
+
+  .about-topic {
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+/* DEsktop Styles */
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .social-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .top-bar {
+    width: 100%;
+    height: 26px;
+    background-color: #000;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+  }
+
+  .top-bar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 0%;
+    padding-right: 1%;
+    gap: 2%;
+  }
+
+  .see-whole a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .top-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .logo {
+    width: 40%;
+    margin-left: 30%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #f7f7f7;
+    position: fixed;
+    z-index: 2;
+    top: 26px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    background-image: radial-gradient(circle at center, #fff, #f7f7f7);
+  }
+
+  .desk-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .desk-nav-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 25%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .desk-nav-link {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .register-now {
+    border: 5px solid #f5422e;
+    height: 50%;
+    padding: 0.5%;
+    margin: 1%;
+  }
+
+  .intro-container {
+    background-image: url(./images/food.png);
+    margin: 0;
+    border: 1px solid whitesmoke;
+    background-size: cover;
+    position: relative;
+    top: 72px;
+  }
+
+  .home-message {
+    background-color: #f7f7f7;
+    border: 2px solid #fff;
+    box-shadow: 5px 5px 5px 0 #888, -5px -5px 5px 0 #888;
+    width: 55%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .further-info {
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 7%;
+  }
+
+  .welcome-container {
+    margin-top: 12%;
+    margin-left: 12%;
+    margin-bottom: 8%;
+  }
+
+  .welcome-message {
+    margin-top: 2%;
+    padding: 2%;
+    width: 100%;
+  }
+
+  .main-program {
+    position: relative;
+    top: 72px;
+    background-color: #272a32;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    margin-bottom: 78px;
+    padding-bottom: 8%;
+  }
+
+  .program-card-entry {
+    color: #f5422e;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .card {
+    background-color: rgba(105, 104, 104, 0.685);
+    display: flex;
+  }
+
+  .icon {
+    font-size: 30px;
+    margin: 0%;
+    height: 40px;
+    width: 40px;
+    align-self: center;
+  }
+
+  .program-card-entry,
+  .program-card-desc {
+    margin: 0%;
+    text-align: center;
+    height: 100%;
+  }
+
+  .program-cards {
+    display: flex;
+    gap: 2%;
+    margin: 2%;
+  }
+
+  .main-program-heading {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 1%;
+  }
+
+  .red-line1 {
+    width: 55px;
+    height: 1px;
+    background-color: #f5422e;
+    margin: auto;
+  }
+
+  .featured-chefs {
+    margin-bottom: 10%;
+    margin-top: 9%;
+  }
+
+  .about-page-info {
+    margin: 10%;
+    margin-left: 20%;
+  }
+
+  .shakys-logo {
+    width: 40%;
+    height: 40%;
+    margin: 25%;
+  }
+
+  .section-2 {
+    position: relative;
+    top: 72px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+  }
+
+  .about-shakys {
+    text-align: center;
+  }
+
+  .past-event {
+    background-color: #f5422e;
+    background-image: url(./images/food.png);
+  }
+
+  .past-event-item {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 5%;
+  }
+
+  .past-event-container {
+    display: flex;
+    margin: 10%;
+    gap: 5%;
+  }
+
+  .featured-chefs-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 2%;
+    gap: 2%;
+    list-style-type: none;
+  }
+
+  .chef-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2%;
+  }
+
+  .see-whole {
+    text-align: center;
+    margin-top: 6%;
+    color: #fff;
+  }
+
+  .image {
+    border: 2px solid red;
+    width: 20%;
+  }
+
+  .imagea {
+    width: 20%;
+    height: 70px;
+  }
+
+  .logo-home {
+    width: 10%;
+  }
+
+  .time {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    margin-top: 4%;
+    color: #414246;
+  }
+
+  .about-topic {
+    padding-left: 15%;
+    font-weight: 900;
+  }
+
+  .about-welcome-message {
+    padding: 2%;
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  .about-h-message {
+    margin-top: 9%;
+    background-color: #fff;
+    border: 2px solid #d6d6d6;
+  }
+
+  .quote {
+    font-size: 35px;
+  }
+
+  .topic {
+    font-weight: 900;
+    font-size: 50px;
+  }
+
+  .location {
+    margin-bottom: 15%;
+    font-size: 20px;
+  }
+}
